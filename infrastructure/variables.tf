@@ -3,13 +3,13 @@ variable "aws_region" {
 }
 
 variable "base_bucket_name" {
-  default = "my-bucket"
+  default = "my-bucket-rony"
 }
 
 variable "account" {
-  default = 123456789
+  default = 748265590977
 }
 
 variable "lambda_function_name" {
-  default = "my-lambda"
+  default = "my-lambda-rony"
 }
