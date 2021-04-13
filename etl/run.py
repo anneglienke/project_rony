@@ -3,7 +3,7 @@ import argparse
 import pandas as pd
 
 def get_data():
-    return pd.read_csv('https://raw.githubusercontent.com/neylsoncrepalde/titanic_data_with_semicolon/main/titanic.csv')
+    return pd.read_csv('https://raw.githubusercontent.com/neylsoncrepalde/titanic_data_with_semicolon/main/titanic.csv',';')
 
 def make_transformation(df):
     """

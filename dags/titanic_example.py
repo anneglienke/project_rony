@@ -24,7 +24,7 @@ dag = DAG(
 
 get_data = BashOperator(
     task_id="get-data",
-    bash_command='curl https://raw.githubusercontent.com/A3Data/hermione/master/hermione/file_text/train.csv -o ~/train.csv',
+    bash_command='curl https://raw.githubusercontent.com/neylsoncrepalde/titanic_data_with_semicolon/main/titanic.csv',
     dag=dag
 )
 
