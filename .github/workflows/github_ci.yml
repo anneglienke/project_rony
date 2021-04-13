@@ -62,11 +62,6 @@ jobs:
     
     - name: HashiCorp - Setup Terraform
       uses: hashicorp/setup-terraform@v1.2.1
-
-    - name: HashiCorp - Setup Terragrunt
-      uses: autero1/action-terragrunt@v1.1.0
-      with: 
-        terragrunt_version: 0.21.13
     
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
@@ -77,7 +72,7 @@ jobs:
 
     - name: Iac Apply
       env:
-        COMMAND_IAC: terraform #terraform/terragrunt
+        COMMAND_IAC: terraform
       run: |
         cd infrastructure
         $COMMAND_IAC init
