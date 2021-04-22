@@ -187,3 +187,8 @@ resource "aws_iam_role_policy_attachment" "lambda_attach" {
   role       = aws_iam_role.lambda.name
   policy_arn = aws_iam_policy.lambda.arn
 }
+
+resource "aws_iam_group" "dataengineer" {
+  name = "dataengineer"
+  path = "/"
+}
